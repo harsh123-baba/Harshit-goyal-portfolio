@@ -1,19 +1,22 @@
 
 import { getProject } from "@/sanity/sanity-utils";
 import {PortableText} from '@portabletext/react';
+import Image from "next/image";
 type Props = {
     params: { project: string }
 }
 export default async function Project({ params }: Props) {
+    // console.log("------------------------------------------------------------------")
     const slug = params.project;
     const project = await getProject(slug);
+    // console.log(project);
 
     return( 
     <div>
         <header className="flex items-center justify-between">
             <h1 className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold">{project.name}</h1>
             <a 
-                href={project.url} 
+                href={project.name} 
                 title="view project" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -29,12 +32,12 @@ export default async function Project({ params }: Props) {
         </div>
         {/* image comes here */}
         <div>
-           
-            <img 
+            <Image src = {project.image} alt={project.alt} width = {250} height= {240} />
+            {/* <img 
                 src={project.image} 
                 alt={project.name}
                 className="mt-10 border-2 border-gray-200 object-cover rounded-xl"    
-            />
+            /> */}
         </div>
     </div>
 )}
