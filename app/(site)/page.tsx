@@ -1,5 +1,4 @@
 import {getProjects} from "@/sanity/sanity-utils"
-import Image from "next/image";
 import Link from "next/link";
 export default async function Home() {
   // projects is an array for Project type Project type is coming from getProject function return
@@ -28,14 +27,7 @@ export default async function Home() {
               key={project._id} className="border-2 border-gray-500 rounded-lg p-1 hover:scale-110 hover:border-blue-500 transition">
             
             {project.image && (
-              // <Image 
-              //   src= {project.image}
-              //   width = {250} 
-              //   height = {100} 
-              //   alt= {project.alt} 
-              //   // className = "object-cover rounded-lg border border-gray-500"
-              //   // loading="lazy"
-              // />
+ 
               <img className="w-5/6 h-4/6" src={project.image} alt= {project.alt}/>
              )}
             <div className="mt-2 font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">

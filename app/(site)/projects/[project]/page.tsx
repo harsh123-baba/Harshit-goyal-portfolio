@@ -29,7 +29,7 @@ export default async function Project({ params }: Props) {
         </div>
         {/* image comes here */}
         <div>
-            {/* <Image src = {project.image} alt={project.name} width={450} height={300} /> */}
+           
             <img 
                 src={project.image} 
                 alt={project.name}
