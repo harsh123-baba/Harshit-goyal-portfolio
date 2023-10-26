@@ -4,12 +4,10 @@ import {PortableText} from '@portabletext/react';
 type Props = {
     params: { project: string }
 }
-import Image from "next/image";
 export default async function Project({ params }: Props) {
     const slug = params.project;
     const project = await getProject(slug);
 
-    console.log("Image ic",project.image)
     return( 
     <div>
         <header className="flex items-center justify-between">
