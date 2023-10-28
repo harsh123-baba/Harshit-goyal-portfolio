@@ -1,8 +1,8 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Link from 'next/link'
-import '../globals.css'
-import { getPages } from '@/sanity/sanity-utils'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Link from 'next/link';
+import '../globals.css';
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,9 +16,7 @@ export default  async function RootLayout({
   children: React.ReactNode
 }) {
 
-  // get our pages for nav bar
-  const pages = await getPages();
-
+ 
 
   return (
     <html lang="en">
@@ -31,21 +29,13 @@ export default  async function RootLayout({
                 Harshit
             </Link>
             <div className='flex items-center gap-5 text-sm text-gray-600'>
-              {
-                pages.map((page)=>(
-                  <Link 
-                  key = {page._id}
-                  href={`/${page.slug}`}
-                  className='hover:underline'
-                  >
-                    {page.title}
-                  </Link>
-                ))
-              }
+
+              <Link href = '/about'>About</Link>
+              <Link href = "/skills">Skills</Link>
+              <Link href = "/contact">Contact Me</Link>
+              <Link href = "/experience">Experience</Link>
 
             </div>
-
-
           </header>
         <main className='py-20'>
           {children}

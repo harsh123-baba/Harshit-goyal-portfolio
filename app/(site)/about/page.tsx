@@ -20,7 +20,7 @@ export default async function AboutPage() {
             </div>
             <h2 className="mt-10 font-bold text-gray-700 text-3xl">About Me</h2>
 
-            <div className="mt-5 grid grid-cols-2 gap-4 flex">
+            <div className="p-4 mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                     <span className="pr-4">
                         <Image
                             src="/harshit-about.jpeg"
