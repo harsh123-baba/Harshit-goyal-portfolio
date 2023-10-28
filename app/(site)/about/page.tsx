@@ -4,9 +4,9 @@ export default async function AboutPage() {
     return (
         <div>
             <h1 className="text-3xl font-extrabold">
-                Hello I'll help you to know    &nbsp;
+                Hello I&apos;ll help you to know &nbsp;
                 <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
-                    About  &nbsp;
+                    About &nbsp;
                 </span>
                 <span className="bg-gradient-to-l from-yellow-500 via-red-400 to-green-400 bg-clip-text text-transparent">
                     Harshit Goyal
@@ -14,7 +14,7 @@ export default async function AboutPage() {
             </h1>
             <div className="mt-5 flex items-center justify-between">
                 <p className="mt-3 text-xl text-gray-600">
-                    Hello Everyone! I'm Harshit Goyal
+                    Hello Everyone! I&apos;m Harshit Goyal
                 </p>
                 <a href = {"https://drive.google.com/file/d/18rMrzoiFmdOS2SXaqL_V8J-B8LyDWVGM/view?usp=drive_link"} title = "Resume" target = "_blank" rel="noopener noreferrer" className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-pink-500 hover:text-white-100 tansisition">Resume</a>
             </div>
@@ -38,10 +38,6 @@ export default async function AboutPage() {
                          My responsiblities includes creating APIs with DB, implementing logics integrating them with the frontend and deploy them with minimal downtime using technologies such as Node.js,
                          Express.js, EJS, jQuery, Ajax, MySQL, Nginx, and more.
                     </p>
-                    {/* <p className="text-lg text-gray-800">
-                        As
-
-                    </p> */}
             </div>
 
 
