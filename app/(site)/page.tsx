@@ -16,7 +16,7 @@ export default async function Home() {
       </h1>
 
       <p className="mt-3 text-xl text-gray-600">
-        Hello Everyone! checkout my projects
+        Hello Everyone! I&apos;m Full Stack Developer
       </p>
       <h2 className="mt-24 font-bold text-gray-700 text-3xl">My projects</h2>
       <div className="mt-5 grid grid-cols-1 md: grid-cols-2 lg:grid-cols-3 gap-8">
