@@ -16,7 +16,7 @@ export default async function AboutPage() {
                 <p className="mt-3 text-xl text-gray-600">
                     Hello Everyone! I&apos;m Harshit Goyal
                 </p>
-                <a href = {"https://drive.google.com/file/d/18rMrzoiFmdOS2SXaqL_V8J-B8LyDWVGM/view?usp=drive_link"} title = "Resume" target = "_blank" rel="noopener noreferrer" className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-pink-500 hover:text-white-100 tansisition">Resume</a>
+                <a href = {"https://drive.google.com/file/d/18rMrzoiFmdOS2SXaqL_V8J-B8LyDWVGM/view?usp=drive_link"} title = "Resume" target = "_blank" rel="noopener noreferrer" className="bg-orange-500 rounded-lg text-white font-bold py-3 px-4 whitespace-nowrap hover:bg-purple-500 hover:text-white tansisition">Resume</a>
             </div>
             <h2 className="mt-10 font-bold text-gray-700 text-3xl">About Me</h2>
 
@@ -29,7 +29,7 @@ export default async function AboutPage() {
                             height={300}
                         />
                     </span>
-                    <p className="text-lg text-gray-800">
+                    <p className="text-lg text-gray-800 text-justify">
                         As i am Senior engineer at Larsen & Toubro Data centers and cloud services.
                          i have gained hands on experience in full stack development, cloud computing, and software-as-a-service product development.
                          My current role is, i am part of Product developement team working on SaaS products and cloud services.

@@ -61,3 +61,4 @@ export async function getPage(slug : string) : Promise<Page>{
         {slug}
     )
 }
+
