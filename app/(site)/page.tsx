@@ -22,6 +22,9 @@ export default async function Home() {
       <div className="flex flex-wrap mt-4">
         {
           socials.map(social=>(
+            <div key={social._id}>
+
+            
             <a href = {social.url} target="_blank">
             <div className="flex flex-wrap p-1">
               {/* <a href = {social.url}> */}
@@ -37,6 +40,7 @@ export default async function Home() {
 
                 </div>
                 </a>
+                </div>
           ))
         }
       </div>

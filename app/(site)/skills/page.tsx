@@ -30,11 +30,11 @@ export default async function SkillsPage() {
                 <div className="p-3">
                     {
                         skills.map((s:Skill) => (
-                            <>
+                            <div key={s._id}>
 
                             <b>{s.name}</b>
                             <p className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent font-semibold p-1">{s.skill}</p>
-                            </>
+                            </div>
                         ) )
                     }
 
