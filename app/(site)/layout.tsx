@@ -29,12 +29,9 @@ export default  async function RootLayout({
                 Harshit
             </Link>
             <div className='flex items-center gap-5 text-sm text-gray-600'>
-
               <Link href = '/about'>About</Link>
               <Link href = "/skills">Skills</Link>
-              <Link href = "/contact">Contact</Link>
-              <Link href = "/experience">Experience</Link>
-
+              {/* <Link href = "/experience">Experience</Link> */}
             </div>
           </header>
         <main className='py-20'>

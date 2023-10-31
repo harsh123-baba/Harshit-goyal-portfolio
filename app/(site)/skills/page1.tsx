@@ -1,9 +1,8 @@
 import { getSkills } from "@/sanity/sanity-utils"
-import { Skill } from "@/types/Skill";
 
 export default async function SkillsPage() {
     const skills = await getSkills();
-    // console.log(skills);
+    console.log(skills);
 
     return (
         <div>
@@ -27,17 +26,23 @@ export default async function SkillsPage() {
 
                     </p>
                 </div>
-                <div className="p-3">
-                    {
-                        skills.map((s:Skill) => (
-                            <>
-
-                            <b>{s.name}</b>
-                            <p className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent font-semibold p-1">{s.skill}</p>
-                            </>
-                        ) )
-                    }
-
+                <div className="p-2">
+                    <b>Programming Langages</b>
+                    <p className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent font-semibold">
+                        • C++  • Javascript  • Python
+                    </p>
+                    <b>Web Technologies</b>
+                    <p className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent font-semibold">
+                        • NodeJS  • ExpressJS  • JavaScript  • ReactJS  • TypeScript  • NextJS  • AJAX • JWT • REST APIs • Bootstrap
+                    </p>
+                    <b>Databases</b>
+                    <p className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent font-semibold">
+                        • MYSQL  • MongoDB
+                    </p>
+                    <b>Tools & Others</b>
+                    <p className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent font-semibold">
+                        • Git  • Nginx  • Linux  • Azure  • AWS  • LibreNMS  • ApacheJmeter • NetStorm  • REST APIs • Bootstrap
+                    </p>
                 </div>
             </div>
 

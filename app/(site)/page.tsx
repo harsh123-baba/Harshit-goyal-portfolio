@@ -1,3 +1,4 @@
+import { getSocials } from "@/sanity/sanity-utils";
 import {getProjects} from "@/sanity/sanity-utils"
 import Link from "next/link";
 import Image from "next/image";
@@ -5,7 +6,7 @@ export default async function Home() {
   // projects is an array for Project type Project type is coming from getProject function return
   // getProject function returns a promise of type <Project>
   const projects = await getProjects();
-
+  const socials = await getSocials();
   return (
     <div className="">
       <h1 className="text-7xl font-extrabold">
@@ -18,6 +19,56 @@ export default async function Home() {
       <p className="mt-3 text-xl text-gray-600">
         Hello Everyone! I&apos;m Full Stack Developer
       </p>
+      <div className="flex flex-wrap mt-4">
+        {
+          socials.map(social=>(
+            <a href = {social.url} target="_blank">
+            <div className="flex flex-wrap p-1">
+              {/* <a href = {social.url}> */}
+              <Image 
+                src = {social.image}
+                alt={social.name}
+                width={30}
+                height={20}
+                className="p-1"
+              />
+              <span className="p-1">{social.name}</span>
+              {/* </a> */}
+
+                </div>
+                </a>
+          ))
+        }
+      </div>
+      <div className="flex flex-wrap p-1">
+        <div>
+          <a  href = "mailto:harshitgoyal213@gmail.com" className="flex p-1">
+            <Image
+              src = '/email.jpg'
+              alt="email"
+              width={25}
+              height={20}
+              className="p-1"
+            />
+            harshitgoyal213@gmail.com
+          </a>
+        
+        </div>
+        <div className="">
+          <p className="flex p-1">
+            <Image
+              src = '/contact.jpeg'
+              alt="Contact"
+              width={20}
+              height={20}
+              className="p-1"
+            />
+            +91 8058620389
+          </p>
+        </div>
+
+      </div>
+     
       <h2 className="mt-24 font-bold text-gray-700 text-3xl">My projects</h2>
       <div className="mt-5 grid grid-cols-1 md: grid-cols-2 lg:grid-cols-3 gap-8">
     
@@ -50,18 +101,3 @@ export default async function Home() {
     </div>
   )
 }
-
-
-// in next 12 we have to do all these things dude in next 13 we dont need to do things
-
-// // returns a very specific array of how  next js works
-// export function getStaticPaths(){
-
-// }
-
-// // returjn props : array
-// export function getStaticProps(){
-//   return {
-
-//   }
-// }

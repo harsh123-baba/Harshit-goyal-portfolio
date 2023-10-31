@@ -1,43 +1,20 @@
-const skills = {
-    name : "skill",
-    title : "Skills",
+const tools = {
+    name : "tool",
+    title : "Tools",
     type : "document",
     fields : [
         {
-            name : "programming",
-            title : "Programming",
-            type : "array",
-            of : [
-                {
-                    title : "programming skills",
-                    type : "string"
-                }
-            ]
-            
+            name : 'name',
+            title : 'Name',
+            type : 'string',
         },
         {
-            name : "tools",
-            title : "Tools",
-            type : "array",
-            of : [
-                {
-                    title : "tools skills",
-                    type : "string"
-                }
-            ]
-        },
-        {
-            name : "webTechnologies",
-            title : "Web Technologies",
-            type : "array",
-            of : [
-                {
-                    title : "web skills",
-                    type : "string"
-                }
-            ]
-           
-        },
+            name : "skill",
+            title : "skills",
+            type : 'array',
+            of : [{type : "string"}]
+        }
     ]
 }
-export default skills;
+
+export default tools;
