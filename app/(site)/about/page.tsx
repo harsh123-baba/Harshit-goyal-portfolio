@@ -16,7 +16,7 @@ export default async function AboutPage() {
                 <p className="mt-3 text-xl text-gray-600">
                     Hello Everyone! I&apos;m Harshit Goyal
                 </p>
-                <a href = {"https://drive.google.com/file/d/18rMrzoiFmdOS2SXaqL_V8J-B8LyDWVGM/view?usp=drive_link"} title = "Resume" target = "_blank" rel="noopener noreferrer" className="bg-orange-500 rounded-lg text-white font-bold py-3 px-4 whitespace-nowrap hover:bg-purple-500 hover:text-white tansisition">Resume</a>
+                <a href = {"https://drive.google.com/file/d/1gTnfzfwJ4BKdMd5WvxFm6nvkTpFlvCS6/view?usp=sharing"} title = "Resume" target = "_blank" rel="noopener noreferrer" className="bg-orange-500 rounded-lg text-white font-bold py-3 px-4 whitespace-nowrap hover:bg-purple-500 hover:text-white tansisition">Resume</a>
             </div>
             <h2 className="mt-10 font-bold text-gray-700 text-3xl">About Me</h2>
 
